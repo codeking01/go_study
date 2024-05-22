@@ -2,7 +2,10 @@ package main
 
 // Package main is the entry point
 
-import "fmt"
+import (
+	"fmt"
+	"go_study/version"
+)
 
 // Import fmt to use Println to show output
 
@@ -23,4 +26,5 @@ func FibRecursive(n int) uint64 {
 func main() {
 	// Function call to print out the nth term of the Fibonacci series
 	fmt.Println(FibRecursive(35))
+	fmt.Println(version.Version)
 }
